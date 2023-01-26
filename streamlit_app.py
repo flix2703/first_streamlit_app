@@ -3,7 +3,8 @@ import streamlit
 streamlit.title('My Parents New Healthy Diner')
 
 streamlit.header('Breakfast Menu')
-streamlit.text('🥣 Omega 3 & Blueberry Oatmeal')
+
+('🥣 Omega 3 & Blueberry Oatmeal')
 streamlit.text('🥗 Kale, Spinach & Rocket Smothie')
 streamlit.text('🐔Hard-Boiled Free-Range Egg')
 streamlit.text(' 🥑🍞 Avocado Toast')
@@ -24,7 +25,7 @@ streamlit.dataframe(fruits_to_show)
 streamlit.header("Fruityvice Fruit Advice!")
 import requests
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
-streamlit.text(fruityvice_response)
+
 #take json verison of the respoinse and normalize it
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 #output it screen as a table
